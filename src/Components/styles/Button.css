@@ -1,0 +1,33 @@
+.buttonContainer{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    
+}
+.buttonContainer > button {
+    background-color: white;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    font-family: "neruo";
+    padding: 15px 25px;
+    background-color: rgba(255, 0, 0, 0.521);
+    transition: .5s;
+
+
+}
+
+.buttonContainer > button:hover{
+    background-color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px red;
+    text-shadow: 0 0 10px black;
+}
+
+.buttonContainer > button:active{
+    transform: scale(1);
+}

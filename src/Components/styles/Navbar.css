@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Valorax';
+    src: url('../assets/valorax-font/Valorax-lg25V.otf');
+
+}
+
+*{
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.NavBar{
+    display: flex;
+    font-family: 'Valorax';
+    /* position: fixed; */
+    /* box-shadow: .1px .1px 1px white; */
+    background-color: black;
+}
+
+.icon > li, .Auth > li{
+    list-style-type: none;
+    /* margin: auto; */
+    cursor: pointer;
+    transition: .5s;
+}
+li{
+    list-style: none;
+    margin: auto;
+}
+
+.NavBar > ul:nth-child(1){
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.NavBar > ul:nth-child(1) > li{
+    /* margin-left: 2rem; */
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar > ul:nth-child(1) > li:hover{
+    color: red;
+    filter: drop-shadow(0 0 10px white);
+    /* transform: scale(-1); */
+}
+
+
+.NavBar > ul:nth-child(2){
+    display: flex;
+    margin: auto;
+    margin-right: 5rem;
+    position: fixed;
+    left: 70%;
+    top: 30;
+    z-index: 100;
+}
+
+.NavBar > ul:nth-child(2) > li{
+    margin: auto;
+    margin-left: 3rem;
+    background-color: red;
+    color: white;
+    padding: .5rem;
+    border-radius: 10%;
+    box-shadow: 0 0 5px white;
+}
+
+.NavBar > ul:nth-child(2) > li:hover{
+    transform: scale(1.06);
+
+}
+
+.NavBar > ul:nth-child(2) > li:active{
+    background-color: pink;
+    transform: scale(1);
+}
+
+.icon{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}

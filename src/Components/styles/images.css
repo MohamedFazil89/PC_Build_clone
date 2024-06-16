@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Home';
+    src: url('../assets/comback-home-font/CombackHomeRegular-jEMd9.ttf');
+
+}
+@font-face {
+    font-family: 'techno';
+    src: url('../assets/techno-race-italic-font/TechnoRaceItalic-eZRWe.otf');
+
+}
+
+@font-face {
+    font-family: "Pilot";
+    src: url('../assets/pilot-command-font/PilotCommand3DItalic-ZVXoB.otf');
+}
+
+@font-face {
+    font-family: "neruo";
+    src: url('../assets/neuropolitical/neuropolitical\ rg.otf');
+}
+
+
+
+:root{
+    margin: 0;
+    padding: 0;
+}
+
+.intro{
+    display: flex;
+    margin: auto;
+    /* background-color: rgba(3, 181, 241, 0.842); */
+    width: 100%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.411);
+    /* filter: drop-shadow(0 0 10px black); */
+    border-radius: 350%;
+    margin-top: 2rem;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 45%;
+    text-align: left;
+   padding: 20px;
+
+}
+.text > h1{
+    font-family: 'techno';
+    text-shadow: 0 0 5px black;
+    font-size: 3rem;
+
+}
+.text > h1 > span{
+    /* color: red; */
+    text-shadow: 0 0 10px red;
+    font-family: "Home";
+    /* color: red; */
+
+
+
+
+}
+.text > p{
+    font-family: "neruo";
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px black;
+
+    
+
+}
+
+.text > p > span{
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 0 0 10px white;
+    /* color: black; */
+
+
+}
+
+
+.imgs{
+    margin: auto;
+    /* box-shadow: 0 0 100px blue; */
+    border-radius: 500%;
+    height: 70vh;
+    /* flex-grow: 1; */
+    transition: .5s;
+}
+
+.imgs:hover{
+    filter: sepia(10%);
+}
+
+
+.imgs > img{
+    /* transform: scaleX(-1); */
+    width: 90%;
+    margin-top: 5rem;
+    transition: .5s;
+
+}
+
+.imgs > img:hover{
+    filter: drop-shadow(0 0 10px red) saturate(3);
+    transform: scale(1.03);
+    /* transform: scale(-1); its fun */
+}
+
