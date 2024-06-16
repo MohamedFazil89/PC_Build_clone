@@ -6,7 +6,7 @@ function SlideContainer(props) {
         <div className="Grid-image">
             {props.array.map((item, index) => {
                 return (
-                    <img src={item} alt="images1" />
+                    <img key={index} src={item} alt="images1"  />
 
                 )
             })}

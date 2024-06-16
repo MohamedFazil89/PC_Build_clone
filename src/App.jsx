@@ -22,14 +22,22 @@ export default function App() {
       <Navbar ShowNav={ShowNav} />
       {check ? <Drawer CloseNav={ShowNav} cName={check ? "navs Active" : "navs"}/>: null}
 
-
       <Images />
+      <div className="line"></div>
+
       <div className="imageContainer">
         <ImageSlide array={arrays} />
-        {/* <ImageSlide array={arrays}/> */}
-
-
+        
       </div>
+      <br />
+      <div className="line"></div>
+
+
+      <ImageSlide array={arrays} />
+
+
+
+
     </>
   )
 }
