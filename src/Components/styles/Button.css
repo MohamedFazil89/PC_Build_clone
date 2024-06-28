@@ -31,3 +31,57 @@
 .buttonContainer > button:active{
     transform: scale(1);
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .buttonContainer {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 1rem;
+    }
+
+    .buttonContainer > button {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .buttonContainer {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    .buttonContainer > button {
+        font-size: 0.9rem;
+        padding: 12px 22px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .buttonContainer {
+        justify-content: start;
+        margin-top: 2rem;
+    }
+
+    .buttonContainer > button {
+        font-size: 1rem;
+        padding: 15px 25px;
+    }
+}
+
+/* TV styles */
+@media (min-width: 1920px) {
+    .buttonContainer {
+        justify-content: start;
+        margin-top: 3rem;
+    }
+
+    .buttonContainer > button {
+        font-size: 1.2rem;
+        padding: 20px 30px;
+    }
+}

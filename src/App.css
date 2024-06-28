@@ -16,3 +16,37 @@ body{
 .imageContainer{
     margin: 1rem;
 }
+
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .line {
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .imageContainer {
+        margin: 0.75rem;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .line {
+        width: 60%;
+        margin-top: 4rem;
+    }
+    .imageContainer {
+        margin: 1rem;
+    }
+}
+
+/* TV styles */
+@media (min-width: 1920px) {
+    .line {
+        width: 50%;
+        margin-top: 5rem;
+    }
+    .imageContainer {
+        margin: 1.5rem;
+    }
+}
